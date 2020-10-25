@@ -1,0 +1,40 @@
+html, body { height:100%; width: 100%; }
+body {
+    margin: 0;
+}
+
+section {
+  display: flex;
+}
+
+#left {
+  float: left;
+  width: calc(calc(100%/2) - 50px);
+  height: 3px;
+  margin-left: 0px;
+   background-color: black;
+   margin-top: 71px;
+}
+
+#middle img {
+  float: middle;
+  width: 80px;
+   height: 100px;
+}
+
+#right {
+  float: right;
+  background-color: black;
+  height: 3px;
+  margin-right: 0px;
+  width: calc(calc(100%/2) - 50px);
+  margin-top: 71px;
+}
+.container  {
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+}
+
+
+
