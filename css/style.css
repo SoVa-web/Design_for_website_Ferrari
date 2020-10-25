@@ -45,10 +45,11 @@ section {
 
 #posterImg h1 {
   font-weight: 500;
-    color: rgb(212, 78, 24) ;
-    position: absolute;
+  color: rgb(255, 255, 255) ;
+  position: absolute;
   z-index: 1;
-  margin-top: -105px;
+  margin-top: -80px;
+  margin-left: 30px;
 }
 
 #devide1 {
@@ -60,6 +61,15 @@ section {
 
 #characteristics {
   width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  background-color: burlywood;
+}
+
+#maxSpeed, #overclocking, #maximumPower {
+  background-color: chocolate;
 }
 
 .container  {
