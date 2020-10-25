@@ -6,9 +6,7 @@ body {
 section {
   display: flex;
   position: sticky;
-  right: 0;
     top: 0;
-    left: 0;
     z-index: 1;
     
     
@@ -24,6 +22,7 @@ section {
 #left h1 {
   z-index: 1;
  margin-top: -75px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #middle img {
@@ -50,26 +49,51 @@ section {
   z-index: 1;
   margin-top: -80px;
   margin-left: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#devide1, #devide2, #devide3 {
+  width: 100%;
+  height: 5px;
+  
 }
 
 #devide1 {
-  width: 100%;
-  height: 5px;
-  background-color: black;
   margin-top: -5px;
+  background-color: black;
+}
+
+#devide2, #devide3 {
+  margin-top: 10px;
+  background-color: rgb(245, 220, 220);
 }
 
 #characteristics {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr ;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2vw;
-  background-color: burlywood;
+  background-color: rgb(255, 255, 255);
 }
 
-#maxSpeed, #overclocking, #maximumPower {
-  background-color: chocolate;
+#maxSpeed, #overclocking, #maximumPower, #typeEngine, #fuelTank, #transmision {
+  background-color:rgb(193, 223, 160) ;
+}
+
+#describe {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 20%;
+  margin-left: 20%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#describe #headline {
+  font-size: 32px;
 }
 
 .container  {
