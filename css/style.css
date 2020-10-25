@@ -5,15 +5,25 @@ body {
 
 section {
   display: flex;
+  position: sticky;
+  right: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    
 }
 
-#left {
-  float: left;
-  width: calc(calc(100%/2) - 50px);
+#left, #right {
+  width: calc(calc(100%/2) - 30px);
   height: 3px;
-  margin-left: 0px;
    background-color: black;
    margin-top: 71px;
+}
+
+#left h1 {
+  z-index: 1;
+ margin-top: -75px;
 }
 
 #middle img {
@@ -22,18 +32,39 @@ section {
    height: 100px;
 }
 
-#right {
-  float: right;
-  background-color: black;
-  height: 3px;
-  margin-right: 0px;
-  width: calc(calc(100%/2) - 50px);
-  margin-top: 71px;
+#posterImg {
+    margin-top: -105px;
 }
+
+#posterImg img {
+    width: 100%;
+    position: relative;
+    z-index: 0
+ 
+}
+
+#posterImg h1 {
+  font-weight: 500;
+    color: rgb(212, 78, 24) ;
+    position: absolute;
+  z-index: 1;
+  margin-top: -105px;
+}
+
+#devide1 {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin-top: -5px;
+}
+
+#characteristics {
+  width: 100%;
+}
+
 .container  {
     height: 100%;
     width: 100%;
-    background-color: crimson;
 }
 
 
