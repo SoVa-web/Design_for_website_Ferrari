@@ -3,6 +3,13 @@ body {
     margin: 0;
 }
 
+#menu {
+  position: fixed;
+  z-index: 1;
+  margin: 0;
+  right:  0;
+}
+
 section {
   display: flex;
   position: sticky;
@@ -21,7 +28,7 @@ section {
 
 #left h1 {
   z-index: 1;
- margin-top: -75px;
+ margin-top: -60px;
  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -43,9 +50,9 @@ section {
 }
 
 #posterImg h1 {
-  font-weight: 500;
+  font-weight: 600;
   color: rgb(255, 255, 255) ;
-  position: absolute;
+  position: sticky;
   z-index: 1;
   margin-top: -80px;
   margin-left: 30px;
@@ -53,23 +60,24 @@ section {
 }
 
 
-#devide1, #devide2, #devide3 {
+#devide1, #devide2, #devide3, #devide4{
   width: 100%;
   height: 5px;
   
 }
 
 #devide1 {
-  margin-top: -5px;
+  margin-top: 35px;
   background-color: black;
 }
 
-#devide2, #devide3 {
+#devide2, #devide3, #devide4 {
   margin-top: 10px;
   background-color: rgb(245, 220, 220);
 }
 
 #characteristics {
+  margin-top: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
   display: grid;
@@ -80,26 +88,53 @@ section {
 }
 
 #maxSpeed, #overclocking, #maximumPower, #typeEngine, #fuelTank, #transmision {
-  background-color:rgb(193, 223, 160) ;
+  background-color:rgb(241, 250, 187) ;
+  border: 1px ridge;
+  
+  margin:  0px 10px;
+ 
 }
 
 #describe {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-right: 20%;
-  margin-left: 20%;
+  margin: 30px 20%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 #describe #headline {
-  font-size: 32px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin-top: 20px;
 }
 
-.container  {
-    height: 100%;
-    width: 100%;
+#describe #about {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin-top: 20px;
 }
 
+#aboutCar {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap: 2vw;
+}
 
+#aboutCar p{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin-top: 20px;
+  margin: 30px 10%;
+}
 
+#aboutCar img{
+  width: 60%;
+  height: 60%;
+  margin: 30px 10%;
+}
