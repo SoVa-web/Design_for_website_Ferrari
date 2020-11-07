@@ -1,16 +1,43 @@
 let menu = document.getElementById('menu')
+
 let btn = document.getElementById('menu_btn')
 btn.addEventListener("click", showMenu)
+
+let close = document.getElementById('close_btn')
+close.addEventListener("click", closeMenu)
+close.hidden = true
+
+let u = document.getElementById('menuContent')
+u.hidden = true
+
+let call = document.getElementById('call')
+let state = true
+call.addEventListener("click", rotate)
+
+function rotate(){
+    if(state===true){
+       document.querySelector("#imgCall").classList.toggle("callLeft");
+       document.querySelector("#imgCall").classList.remove("callRight");
+       state=false
+    }else{
+       document.querySelector("#imgCall").classList.remove("callLeft");
+       document.querySelector("#imgCall").classList.toggle("callRight");
+       state = true
+    }
+}
+
 function showMenu(){
-    console.log(111)
-    let stringResult = ""
-    stringResult = stringResult+'<ul id="menuContent">'
-    +'<li><h1>About company</h1></li>'
-    +'<li><h1>Catalog</h1></li>'
-    +'<li><h1>News</h1></li>'
-    +'<li><h1>Sign in</h1></li>'
-    +'<li><h1>Sign up</h1></li>'
-    +'<li><h1>Help</h1></li>'
-    +'</ul> '
-    menu.innerHTML = stringResult
+    u.hidden = false
+    close.hidden = false
+    btn.hidden  = true
+    document.querySelector(".navbarMenu").classList.toggle("navbarMenu-show");
+    document.querySelector(".navbarMenu").classList.remove("navbarMenu-close");
+}
+
+function closeMenu(){
+    close.hidden = true
+    btn.hidden  = false
+    document.querySelector(".navbarMenu").classList.toggle("navbarMenu-close");
+    document.querySelector(".navbarMenu").classList.remove("navbarMenu-show");
+   
 }

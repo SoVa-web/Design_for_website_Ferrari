@@ -3,43 +3,116 @@ body {
     margin: 0;
 }
 
-#menu {
+.navbarMenu {
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   margin: 0;
   right:  0;
 }
 
+.navbarMenu-show{
+  animation-name: anim-menu;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
 
-#menuContent{
-  margin-top: 30%;
-  height: 100%;
+.navbarMenu-close{
+  animation-name: close-menu;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes  anim-menu {
+  0%{
+    margin-right: -500px;
+  }
+  100%{
+    margin-right: 0;
+  }
+}
+
+@keyframes  close-menu {
+  0%{
+    margin-right: 0;
+  }
+  100%{
+    margin-right: -500px;
+  }
+}
+
+#menuContent {
   width: 100%;
+  margin-top: 90px;
   background-color: #ecde16c2;
   list-style-type: none;
   padding: 0;
-  text-align: center;
-
+  box-shadow: 0 10px 10px black;
+  
 }
 
 #menuContent li{
+  text-align: center;
   width:  100%;
+  height: calc((100%-30%)/6);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border: inset;
+  border: rgba(255, 253, 105, 0.712)  inset;
+  font-size: 40px;
+  padding: 20px 15px;
+  
 }
 
-#menu_btn {
+
+#menuContent  :hover{
+  position: sticky;
+  background: rgba(200,100,100, 0.5);
+  cursor: pointer;
+} 
+
+#menu_btn, #close_btn {
   position: fixed;
   margin: 0;
   right:  0;
-  z-index: 3;
-  width: 90px;
-  height: 90px;
+  z-index: 5;
+  width: 70px;
+  height: 70px;
   border: none;
   background: none;
 }
 
+#call{
+  position: fixed;
+  right:  0;
+  bottom: 0;
+  z-index: 6;
+  width: 70px;
+  height: 70px;
+  border: none;
+  background: none;
+  outline: none;
+}
+ #imgCall {
+  position: relative;
+  z-index: 7;
+  cursor: pointer;
+}
 
+.callLeft{
+  transition-duration: 3s ;
+  transition-property: all;
+  transform: rotate(0deg);
+}
+
+.callRight{
+  transition-duration: 3s ;
+  transform: rotate(-720deg);
+}
+
+
+
+ 
 
 section {
   display: flex;
