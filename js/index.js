@@ -14,15 +14,23 @@ let call = document.getElementById('call')
 let state = true
 call.addEventListener("click", rotate)
 
+let operator = document.getElementById('operator')
+operator.hidden = true;
+
 function rotate(){
     if(state===true){
-       document.querySelector("#imgCall").classList.toggle("callLeft");
-       document.querySelector("#imgCall").classList.remove("callRight");
-       state=false
-    }else{
        document.querySelector("#imgCall").classList.remove("callLeft");
        document.querySelector("#imgCall").classList.toggle("callRight");
-       state = true
+       document.querySelector("#operator").classList.toggle("operator-show");
+       document.querySelector("#operator").classList.remove("operator-close");
+       operator.hidden = false
+       state=false
+    }else{
+       document.querySelector("#imgCall").classList.toggle("callLeft");
+       document.querySelector("#imgCall").classList.remove("callRight");
+       document.querySelector("#operator").classList.toggle("operator-close");
+       document.querySelector("#operator").classList.remove("operator-show");
+       state = true 
     }
 }
 

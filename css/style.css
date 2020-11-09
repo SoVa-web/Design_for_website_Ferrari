@@ -10,14 +10,14 @@ body {
   right:  0;
 }
 
-.navbarMenu-show{
+.navbarMenu-show, .operator-show{
   animation-name: anim-menu;
   animation-duration: 0.7s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
-.navbarMenu-close{
+.navbarMenu-close, .operator-close{
   animation-name: close-menu;
   animation-duration: 0.7s;
   animation-timing-function: linear;
@@ -50,7 +50,8 @@ body {
   list-style-type: none;
   padding: 0;
   box-shadow: 0 10px 10px black;
-  
+  border-radius: 20px;
+  border: rgba(255, 253, 105, 0.712)  inset;
 }
 
 #menuContent li{
@@ -58,10 +59,14 @@ body {
   width:  100%;
   height: calc((100%-30%)/6);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border: rgba(255, 253, 105, 0.712)  inset;
   font-size: 40px;
   padding: 20px 15px;
-  
+  border-radius: 20px;
+}
+
+#menuContent  li :target{
+  display: none;
+  background-color: rgb(39, 24, 24);
 }
 
 
@@ -80,6 +85,7 @@ body {
   height: 70px;
   border: none;
   background: none;
+  outline: none;
 }
 
 #call{
@@ -93,6 +99,7 @@ body {
   background: none;
   outline: none;
 }
+
  #imgCall {
   position: relative;
   z-index: 7;
@@ -110,9 +117,30 @@ body {
   transform: rotate(-720deg);
 }
 
+#operator {
+  position: fixed;
+  z-index: 8;
+  bottom: 10%;
+  right:  1%;
+  background-color: #ecde16c2;
+  border: rgba(255, 253, 105, 0.712)  inset;
+  border-radius: 15px;
+  width: 400px;
+  height: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 30px;
+  padding-top: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-
- 
+ #operator input{
+   border-radius: 20px;
+   width: 100%;
+   height: 15%;
+   outline: none;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
 
 section {
   display: flex;
