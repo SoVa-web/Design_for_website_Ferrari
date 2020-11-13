@@ -165,12 +165,6 @@ body {
   border-radius: 20px;
 }
 
-#menuContent  li :target{
-  display: none;
-  background-color: rgb(39, 24, 24);
-}
-
-
 #menuContent  :hover{
   position: sticky;
   background: rgba(200,100,100, 0.5);
@@ -251,9 +245,9 @@ body {
    margin-top: 71px;
 }
 
-#left h1 {
-  z-index: 1;
- margin-top: -60px;
+ #leftName {
+  z-index: 2;
+  margin-top: -50px;
  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -316,7 +310,7 @@ body {
 }
 
 #describe #headline {
-  font-size: 30px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: justify;
   margin-top: 20px;
