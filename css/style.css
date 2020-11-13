@@ -11,6 +11,13 @@ body {
     text-align: center;
 }
 
+#aboutCar p{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin: 30px 10%;
+}
+
 @media all and (max-width: 1200px) {
   #characteristics {
     display: grid;
@@ -25,14 +32,7 @@ body {
     grid-template-columns: 1fr  ;
     grid-gap: 2vw;
   }
-  
-  #aboutCar p{
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-    margin: 30px 10%;
-  }
-  
+   
   #aboutCar img{
     width: 500px;
     height: 350px;
@@ -60,14 +60,6 @@ body {
     grid-template-rows: 1fr 1fr 1fr ;
     grid-template-columns: 1fr 1fr ;
     grid-gap: 2vw;
-  }
-  
-  #aboutCar p{
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-    margin-top: 20px;
-    margin: 30px 10%;
   }
   
   #aboutCar img{
