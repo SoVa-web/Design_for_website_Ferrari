@@ -369,8 +369,8 @@ footer h1{
 @font-face {
 	font-family: 'Playlist-Script';
 	src: local('Playlist-Script'),
-	     url('/Playlist-Script.woff2') format('woff2'),
-	     url('/Playlist-Script.woff') format('woff');
+	     url('font/Playlist-Script.woff2') format('woff2'),
+	     url('font/Playlist-Script.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
