@@ -3,6 +3,107 @@ body {
     margin: 0;
 }
 
+#characteristics {
+  margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+@media all and (max-width: 1200px) {
+  #characteristics {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr  1fr;
+    grid-gap: 2vw;
+  }
+
+  #aboutCar {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr  ;
+    grid-gap: 2vw;
+  }
+  
+  #aboutCar p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin: 30px 10%;
+  }
+  
+  #aboutCar img{
+    width: 500px;
+    height: 350px;
+    margin: 30px 10%;
+  }
+
+  #email {
+    width: 60%;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media all and (min-width: 1201px){
+  #characteristics {
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+  }
+
+  #aboutCar {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 2vw;
+  }
+  
+  #aboutCar p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin-top: 20px;
+    margin: 30px 10%;
+  }
+  
+  #aboutCar img{
+    width: 60%;
+    height: 60%;
+    margin: 30px 10%;
+    text-align: center;
+  }
+
+  #email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: rgb(39, 24, 24) inset;
+    width: 60%;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media all and (max-width: 600px){
+  #characteristics {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr ;
+    grid-gap: 2vw;
+  }
+
+  #aboutCar img{
+    width: 300px;
+    height: 250px;
+    margin: 30px 10%;
+  }
+}
+
 .navbarMenu {
   position: fixed;
   z-index: 4;
@@ -83,9 +184,6 @@ body {
   z-index: 5;
   width: 70px;
   height: 70px;
-  border: none;
-  background: none;
-  outline: none;
 }
 
 #call{
@@ -95,9 +193,6 @@ body {
   z-index: 6;
   width: 70px;
   height: 70px;
-  border: none;
-  background: none;
-  outline: none;
 }
 
  #imgCall {
@@ -142,7 +237,7 @@ body {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
 
-section {
+#logotype {
   display: flex;
   position: sticky;
     top: 0;
@@ -202,26 +297,13 @@ section {
 
 #devide2, #devide3, #devide4 {
   margin-top: 10px;
-  background-color: rgb(245, 220, 220);
-}
-
-#characteristics {
-  margin-top: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 100%;
-  display: grid;
-  grid-template-rows: 1fr 1fr ;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2vw;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(233, 230, 36);
 }
 
 #maxSpeed, #overclocking, #maximumPower, #typeEngine, #fuelTank, #transmision {
-  background-color:rgb(241, 250, 187) ;
+  background-color: #fdef2e;
   border: 1px ridge;
-  
   margin:  0px 10px;
- 
 }
 
 #describe {
@@ -247,23 +329,54 @@ section {
   margin-top: 20px;
 }
 
-#aboutCar {
+
+
+footer {
+  padding: 30px;
+  background-color: rgb(235, 221, 36);
+  margin: 0;
+  width: 100%;
+}
+
+#social {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+footer h1{
+  font-family: Playlist-Script;
+  font-size: 70px;
+  text-align: center;
+  margin: 0;
+}
+
+#ref{
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr ;
-  grid-template-columns: 1fr 1fr ;
-  grid-gap: 2vw;
-}
-
-#aboutCar p{
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: justify;
-  margin-top: 20px;
-  margin: 30px 10%;
-}
-
-#aboutCar img{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 0;
   width: 60%;
-  height: 60%;
-  margin: 30px 10%;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#ref form{
+  text-align: center;
+}
+
+ button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+@font-face {
+	font-family: 'Playlist-Script';
+	src: local('Playlist-Script'),
+	     url('/Playlist-Script.woff2') format('woff2'),
+	     url('/Playlist-Script.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
